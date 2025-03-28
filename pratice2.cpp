@@ -157,24 +157,51 @@ int main() {
     //     }
     // }   
 
+    // Q write a program to print the 
 
-int a ,sum=0,c;  
+int a ,sum=0,c,b;  
+
+cout<<"enter the number\n"; 
+
+cin>>a; 
 c=a;
-cout<<"enter the number";
-cin>>a;
-for(int a ; a>0){ 
-    c=a%10;
-    sum=sum+(c*10);
+for( a ; a>0;){ 
+    b=a%10;
+    sum=b+(sum*10);
     a=a/10;
 }
-if(sum==a){ 
-    cout<<"plaindrom";
+if(sum==c){ 
+    cout<<"plaindrom"<<sum;
 }
 else{ 
-    cout<<"not plaindrom";
+    cout<<"not plaindrom"<<sum;
 }
     
-    
+
+// Q. write a program to solve the question 
+
+// int a ,b, sum=0, k;
+// cout<<"enter the number\n";
+// b=a;
+// cin>>a; 
+
+// for ( a; a>0; a=a/10)
+// {
+//     k=a%10;
+//     sum+=(k*k*k);
+
+//      /* code */
+// } 
+
+
+
+//     if (a==sum)
+//     {
+//         cout<<"armstrong "<<sum;/* code */
+//     }
+//     else{
+//         cout<<"not armstrong "<<sum;
+//     }
 
    
 

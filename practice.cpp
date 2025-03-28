@@ -168,35 +168,94 @@ int main(){
 
 // Q  armstrong to three digit number
 
-int a,b=0,c=0,d; 
+// int a,b=0,c=0,d; 
 
-cout<<"enter the number";
-cin>>a; 
- if(a>100 && a<999) { 
-   cout<<"valid \n ";  
-   d=a;
+// cout<<"enter the number";
+// cin>>a; 
+//  if(a>100 && a<999) { 
+//    cout<<"valid \n ";  
+//    d=a;
 
-   for (; a>0; a=a/10)
+//    for (; a>0; a=a/10)
    
-   {
-      b=a%10;
-      c=c+(b*b*b);
+//    {
+//       b=a%10;
+//       c=c+(b*b*b);
       
-       /* code */
-   }  
-   if(d==c){  
-      cout<<"number is armstrong: "<<c;
+//        /* code */
+//    }  
+//    if(d==c){  
+//       cout<<"number is armstrong: "<<c;
 
-   } 
-   else {
-      cout<<"not armstrong";
-   }
+//    } 
+//    else {
+//       cout<<"not armstrong";
+//    }
    
    
- } 
- else{ 
-   cout<<"invalid";
- }
+//  } 
+//  else{ 
+//    cout<<"invalid";
+//  }   
+
+// Q. write a program increment or decrement  threw goto statment 
+
+// int a,b=1 ; 
+// cout<<"enter a number who want to decend\n";
+// cin>>a; 
+//  lo: 
+
+ 
+// if(b<=a){ 
+      
+//    cout<<b<<" " ; 
+//    b++; 
+// goto lo;
+// }
+// else{ 
+//    cout<<"end";
+// }
+
+// Q . write a program 
+
+int a,b;
+cout<<"Enter the number \n";  
+
+cin>>a; 
+cout<<"suppose 1 is even odd , 2 is leap year , 3 is squre , 4 is cube \n"; 
+cout<<"enter the choice : ";
+cin>>b;
+
+switch (b) 
+{
+case (1): if (a%2==0)
+{
+    cout<<"even number";/* code */
+} 
+else{ 
+   cout<<"odd";
+}  
+break;
+case(2): if (a%4==0 && a%100!=0 || a%400==0)
+{
+    cout<<"leap";/* code */
+} 
+else{  
+   cout<<"not leap";
+}   
+break;
+case (3): 
+cout<<" number of the square is: "<<a*a<<" ";
+break;
+case (4): 
+cout<<" number of the cube is: "<<a*a*a<<" ";
+
+   break;
+
+default:  
+cout<<"invalid choice";
+   break;
+}
 
 
 }

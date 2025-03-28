@@ -142,7 +142,7 @@ int main() {
 
     //condition with expression example
     // int a = 1;
-    // if (a,a++,a--)
+    // if (a,a--,a++)
     // {
     //     cout<<"true"<<endl;
     // }
@@ -189,7 +189,7 @@ int main() {
     // char ch;
     // cout<<"enter the character = "<<endl;
     // cin>>ch;
-    // if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u' || ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U' )
+    // if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U' )
     // {
     //     cout<<"the given character is vowel"<<endl;
     // }
@@ -627,6 +627,7 @@ int main() {
     // }
     
     //Q write a program to find out the prime number between 1 to 20 using do-while;
+
     // int a = 1;
     // do
     // {
@@ -642,11 +643,15 @@ int main() {
     //     } while (b<=a);
     //     if (c==1)
     //     {
-    //         cout<<a<<" ";
+    //         cout<<a<<" "<<endl;
     //     }
     //     a++;
     // } while (a<=20);
+
+
     //Q write a program to print the sum of the values between 1 to 50;
+
+    
     // int a = 1;
     // int sum = 0;
     // do
@@ -656,18 +661,24 @@ int main() {
     // } while (a<=50);
     // cout<<"the sum is = "<<sum<<endl;
     // return 0;
+
+
     //Q write a program to findout the given 3 digit number is armstrong number or not (153);
-    // int a;
-    // cout<<"enter the number = ";
-    // cin>>a;
-    // int b = a;
+
+    
+    // int n;
+    // cout<<"enter the 3 digit number = ";
+    // cin>>n;
+    // int b = n;
     // int sum = 0;    
-    // do
+    // if (n<1000 && n>99)
     // {
-    //     int c = a%10;
+    //     do
+    // {
+    //     int c = n%10;
     //     sum = sum + (c*c*c);
-    //     a = a/10;
-    // } while (a!=0);
+    //     n = n/10;
+    // } while (n>0);
     // if (sum==b)
     // {
     //     cout<<"armstrong number";
@@ -676,7 +687,14 @@ int main() {
     // {
     //     cout<<"not an armstrong number";
     // }
+    // }
+    // else{
+    //     cout<<"invalid 3 digit no"<<endl;
+    // }
+    
     // return 0;
+
+
     //Q write a program to findout the given numbers is palindrome or not;
     // int a;
     // cout<<"enter the number = "; 
@@ -712,43 +730,386 @@ int main() {
     //     }
     //     b++;
     // } while (b<=a);
-    // return 0;  
+    // return 0;
 
-    // Q prime number 
+    //while loop :- while loop is called entry loop it will execute the statement till the condition is true otherwise it will be terminated;
+    // int a = 1;
+    // while(a<=10){
+    //     cout<<a<<endl;
+    //     a++;
+    // }
+    
+    // int a = 1;
+    // while(a<=10){
+    //     cout<<a*a<<endl;
+    //     a++;
+    // }
 
-    // int n=3,k=0,f=0;
-    // while(n<=20){ 
-    //      k=n-1;
-    //      while(k>1){ 
-    //         if(n%k==0) 
-    //         { 
-    //             f=1; break;
-    //         } 
-    //         k--;
-    //      } 
-    //      if(f==0){ 
-    //         cout<<n<<"\t";
-    //      } 
-    //      f=0;
-    //      n++;
- 
-    // }  
+    // int a = 1;
+    // while(a<=10){
+    //     if (a%2==0)
+    //     {
+    //         cout<<a*a<<endl;
+            
+    //     }
+    //     a++;
+    // }
+    
+    //Q write a program to check the user if the password is corect or not and if three attempts are wrong then give the message try again tomorrow
 
-    // Q write a program to print the fibonaci series
-
-    // int a =1,b=0 ,c,k;
-    // cout<<"enter the number";
-    // cin>>k;
-    // for (int i=1; i<=k; i++)
+    // int opw = 2025;
+    // int pw;
+    // cout<<"enter password"<<endl;
+    // cin>>pw;
+    // int a = 1;
+   
+    // while(pw!=opw && a<=3)
     // {
-    //      c=a+b;
-    //      a=b;
-    //      b=c;/* code */ 
-    //      cout<<c<<" ";
-    // } 
-    // cout<<c<<" ";
+    //     if (pw!=opw)
+    //     {
+    //     cout<<"wrong password try again!"<<endl;
+    //     cout<<"Enter again : "<<endl;
+    //     cin>>pw;
+    //     a++;
+    //     }  
+    // }
+    // if (pw!=opw)
+    // {
+    //     cout<<"Try again tomorrow"<<endl;
+    // }
+    // if (pw==opw)
+    // {
+    //     cout<<"Correct password"<<endl;
+    // }
+    //Q print the sum of 1 to n;
+
+    // int i,n;
+    // int sum = 0;
+    // cin>>n;
+
+    // for(i=1; i<=n; i++)
+    // {
+    //     sum=sum+i;
+    // }
+    // cout<<sum;
+
+    //Q print the even number between 1 to n;
+
+    // int i,n;
+    // int sum = 0;
+    // cin>>n;
+    // for ( i = 1;i<=n; i++)
+    // {
+    //     if (i%2==0)
+    //     {
+    //         sum=sum+i;
+    //     }
+        
+    // }
+    // cout<<sum;
+
+    //Q prime number 1 - n;
+
+    //    int i,n;
+    //    cin>>n;
+    //    int count = 0;
+    //    for ( i = 1; i<=n; i++)
+    //    {
+    //     if (n%i==0)
+    //     {
+    //     count++;
+    //     }
+    //    }
+    //    if (count==2)
+    //    {
+    //     cout<<"prime";
+    //    }
+    //    else{
+    //     cout<<"not prime";
+    //    }
+
+    //Q write a program to findout the power 
+
+    // int b,p, k=1;
+    // cout<<"enter the base no = "<<endl;
+    // cin>>b;
+    // cout<<"enter the power = "<<endl;
+    // cin>>p;
+    // for (int i = 1; i<=p; i++)
+    // {
+    //     k=k*b;
+    // }
+    // cout<<k<<endl;
+
+    //Q to sum any number
+
+    // int n;
+    // int c = 0;
+    // cout<<"enter any no = "<<endl;
+    // cin>>n;
+    // while (n>0)
+    // {
+    //    c = c+n%10;
+    //    n=n/10; 
+    // }
+    // cout<<c<<endl;
+
+    //Q reverse any no
+
+    // int n;
+    // int c = 0;
+    // cout<<"enter any no = "<<endl;
+    // cin>>n;
+    // while (n>0)
+    // {
+    //    c = c*10 + n%10;
+    //    n=n/10; 
+    // }
+    // cout<<c<<endl;
+    
+    //Q palindrome 
+
+    // int n;
+    // int c = 0,k;
+    // cout<<"enter any no = "<<endl;
+    // cin>>n;
+    // k=n;
+    // while (n>0)
+    // {
+    //    c = c*10 + n%10;
+    //    n=n/10; 
+    // }
+    // if (c==k)
+    // {
+    //     cout<<"palindrome"<<endl;
+    // }
+    // else
+    // {
+    //     cout<<"not palindrome"<<endl;
+    // }
+    
+    //Q Fibonacci
+
+    // int a = 0;
+    // int b = 1,c,n;
+    // cout<<"enter any no = "<<endl;
+    // cin>>n;
+    // cout<<a<<"\t"<<b<<"\t";
+    // for (int i = 1; i <=n; i++)
+    // {
+    //     c=a+b;
+    //     a=b;
+    //     b=c;
+    //     cout<<c<<"\t";
+    // }
+    
+    //* patterns
+    
+    //Q print
+    //*
+    //*   *
+    //*   *   *
+
+    // for (int r = 1; r <= 3; r++)
+    // {
+    //     for (int c = 1; c <= r; c++)
+    //     {
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Q print
+    //1
+    //1 2
+    //1 2 3
+
+    // for (int r = 1; r <= 3; r++)
+    // {
+    //     for (int c = 1; c <= r; c++)
+    //     {
+    //         cout<<"c ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Q
+    //1
+    //2 2
+    //3 3 3 
+
+    // for (int r = 1; r <= 3; r++)
+    // {
+    //     for (int c = 1; c <= r; c++)
+    //     {
+    //         cout<<"r ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Q
+    //1
+    //2 3
+    //4 5 6 
+
+    // int k = 1;
+
+    // for (int r = 1; r <= 3; r++)
+    // {
+    //     for (int c = 1; c <= r; c++)
+    //     {
+    //         cout<<k<<" ";
+    //         k++;
+    //     }
+    //     cout<<endl;
+    // }
+    
+    //Q print
+    //1
+    //4 9
+    //16 25 36
+
+    //  int k = 1;
+
+    // for (int r = 1; r <= 3; r++)
+    // {
+    //     for (int c = 1; c <= r; c++)
+    //     {
+    //         cout<<k*k<<" ";
+    //         k++;
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Q
+    //a
+    //a b
+    //a b c
+
+    // for (char r= 'a'; r <= 'c'; r++)
+    // {
+    //     for (char c = 'a'; c <= r; c++)
+    //     {
+    //         cout<<c<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Q
+    //a
+    //b b
+    //c c c
+
+    // for (char r= 'a'; r <= 'c'; r++)
+    // {
+    //     for (char c = 'a'; c <= r; c++)
+    //     {
+    //         cout<<r<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+    
+    //Q
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // ***** 
+
+    // for (int r=1; r<=5; r++)
+    // {
+    //     for (int s=4; s>=r; s--)
+    //     {
+    //         cout<<" ";
+    //     }
+    //     for (int c=1;c<=r; c++)
+    //     {
+    //         cout<<"*";
+    //     }
+    //     cout<<endl; 
+    // }
+
+    //Q1
+    //     1
+    //    12
+    //   123
+    //  1234
+    // 12345
+
+    // for (int r=1; r<=5; r++)
+    // {
+    //     for (int s=4; s>=r; s--)
+    //     {
+    //         cout<<" ";
+    //     }
+    //     for (int c=1;c<=r; c++)
+    //     {
+    //         cout<<c;
+    //     }
+    //     cout<<endl; 
+    // }
+
+    //Q2
+    //      a
+    //     ab
+    //    abc
+    //   abcd
+    //  abcde 
+
+    // int b = 5;
+    // for (int r=1; r<=5; r++)
+    // {
+    //     for (int s=4; s>=r; s--)
+    //     {
+    //         cout<<"  ";
+    //     }
+    //     char ch ='a';
+    //     for (int c=1;c<=r; c++)
+    //     {
+    //         cout<<ch++<<" ";
+    //     }
+    //     cout<<endl; 
+    // }
     
 
     
-    
+    //Q3
+    //      1
+    //     22
+    //    333
+    //   4444
+    //  55555 
+    // for (int r=1; r<=5; r++)
+    // {
+    //     for (int s=4; s>=r; s--)
+    //     {
+    //         cout<<" ";
+    //     }
+    //     for (int c=1;c<=r; c++)
+    //     {
+    //         cout<<r;
+    //     }
+    //     cout<<endl; 
+    // }
+
+    //Q4
+    //      1
+    //     23
+    //    456
+    //  78910
+
+    // int a=1;
+    // for (int r=1; r<=4; r++)
+    // {
+    //     for (int s=3; s>=r; s--)
+    //     {
+    //         cout<<"  ";
+    //     }
+    //     for (int c=1;c<=r; c++)
+    //     {
+    //         cout<<a++<<" ";
+    //     }
+    //     cout<<endl; 
+    // }
+
 }
