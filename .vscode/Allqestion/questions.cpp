@@ -118,7 +118,7 @@ int main() {
     // int a;
     // cout<<"enter the number = "<<endl;
     // cin>>a;
-    // cout<<"the cube of a number is = "<<a*a*a<<endl;
+    // cout<<"the cube of a numb  er is = "<<a*a*a<<endl;
 
     //Control flow statement:- it includes 3 types of statements:-
     //1 conditional statement-- there are 4 types:- single,BI,Ladder,nested
@@ -627,7 +627,8 @@ int main() {
     // }
     
     //Q write a program to find out the prime number between 1 to 20 using do-while;
-    // int a = 1;
+    // int a = 1,n; 
+    // cin>>n;
     // do
     // {
     //     int b = 2;
@@ -645,7 +646,7 @@ int main() {
     //         cout<<a<<" ";
     //     }
     //     a++;
-    // } while (a<=20);
+    // } while (a<=n);
     //Q write a program to print the sum of the values between 1 to 50;
     // int a = 1;
     // int sum = 0;
@@ -716,21 +717,29 @@ int main() {
 
     // Q prime number 
 
-    // int n=3,k=0,f=0;
-    // while(n<=20){ 
+    // int n=2,k=0,b;  
+    // bool isprime=true;
+   
+    // while(n<=20){
     //      k=n-1;
     //      while(k>1){ 
     //         if(n%k==0) 
     //         { 
-    //             f=1; break;
+    //             isprime=false; break;
     //         } 
-    //         k--;
+    //         k--; 
+            
     //      } 
-    //      if(f==0){ 
-    //         cout<<n<<"\t";
+         
+    //      if(isprime==true){  
+            
+    //         cout<<n<<"\t"; 
+            
     //      } 
-    //      f=0;
-    //      n++;
+         
+    //      n++; 
+    //       isprime =true;
+    //     }
  
     // }  
 
@@ -746,7 +755,7 @@ int main() {
     //      b=c;/* code */ 
     //      cout<<c<<" ";
     // } 
-    // cout<<c<<" ";
+   // cout<<c<<" ";
     
 
     

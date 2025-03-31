@@ -132,7 +132,7 @@ int main() {
     // }while(a<=b); 
     // cout<<sum<<"\n";
  
-    //  Q write a program to print a number for  
+    // //  Q write a program to print a number for  
     // int n,sum=0; 
     // cout<<"enter the number";
     // cin>>n; 
@@ -140,42 +140,44 @@ int main() {
     //  for (int  i = 1; i<=n ; i++)
     //  { 
         
-    //      sum+=i;
+    //      sum+=i; 
+    //      cout<<sum<<" ";
     //  } 
-    //  cout<<sum;  
+      
 
 
     //  write a program even
      
-    // int a ,n; 
-    // cout<<"enter a nubmer ";
-    // cin>>a;  
-    // for (int i = 1; i<=a; i++)
-    // { 
-    //     if(i%2==0) {
-    //     cout <<i;
-    //     }
-    // }   
+    int a ,n; 
+    cout<<"enter a nubmer ";
+    cin>>a;  
+    for (int i = 1; i<=a; i++)
+    { 
+        if(i%2==0) {
+            cout <<i<<' ';
+        } 
+        
+    }   
 
     // Q write a program to print the 
 
-int a ,sum=0,c,b;  
+// int a ,sum=0,c,b;  
 
-cout<<"enter the number\n"; 
+// cout<<"enter the number\n"; 
 
-cin>>a; 
-c=a;
-for( a ; a>0;){ 
-    b=a%10;
-    sum=b+(sum*10);
-    a=a/10;
-}
-if(sum==c){ 
-    cout<<"plaindrom"<<sum;
-}
-else{ 
-    cout<<"not plaindrom"<<sum;
-}
+// cin>>a; 
+// c=a;
+// for( a ; a>0;){ 
+//     b=a%10;
+//     sum=b+(sum*10);
+//     a=a/10;
+// }
+// if(sum==c){ 
+//     cout<<"plaindrom"<<sum;
+// }
+// else{ 
+//     cout<<"not plaindrom"<<sum;
+// }
     
 
 // Q. write a program to solve the question 

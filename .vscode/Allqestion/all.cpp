@@ -894,7 +894,7 @@ int main() {
     // int b = 1,c,n;
     // cout<<"enter any no = "<<endl;
     // cin>>n;
-    // cout<<a<<"\t"<<b<<"\t";
+    // //cout<<a<<"\t"<<b<<"\t";
     // for (int i = 1; i <=n; i++)
     // {
     //     c=a+b;
@@ -951,15 +951,16 @@ int main() {
     //1
     //2 3
     //4 5 6 
+    //7 8 9 10 
 
     // int k = 1;
 
-    // for (int r = 1; r <= 3; r++)
+    // for (int r = 1; r <= 4; r++)
     // {
     //     for (int c = 1; c <= r; c++)
     //     {
-    //         cout<<k<<" ";
-    //         k++;
+    //         cout<<k++<<" ";
+            
     //     }
     //     cout<<endl;
     // }
