@@ -44,13 +44,26 @@ int main(){
     // else{ 
     //   cout<<"not a prime np";
     // }   
+    
+    //  Q opratore question 
 
-    int c=2;
-    if(--c,--c,c++){ 
-      cout<<c++;
-    } 
-    else 
-    cout<<c++;
+    // int c=2;
+    // if(--c,--c,c++){ 
+    //   cout<<c++;
+    // } 
+    // else 
+    // cout<<--c;  
+
+    int a,b;
+    cout<<"enter the value";
+    cin>>a>>b; 
+    
+    a=a+b;
+    b=a-b;
+   a=a-b;
+
+     
+    cout<<a<<" "<<b;
 
 }
 
