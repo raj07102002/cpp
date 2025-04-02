@@ -53,17 +53,31 @@ int main(){
     // } 
     // else 
     // cout<<--c;  
+  
+    // Q  program swap a variabale without using third variable 
 
-    int a,b;
-    cout<<"enter the value";
-    cin>>a>>b; 
+//     int a,b;
+//     cout<<"enter the value";
+//     cin>>a>>b; 
     
-    a=a+b;
-    b=a-b;
-   a=a-b;
+//     a=a+b;
+//     b=a-b;
+//    a=a-b;
 
      
-    cout<<a<<" "<<b;
+//     cout<<a<<" "<<b;  
+
+// Q table 
+
+// int table;
+// cout<<"Enter the table\n";
+// cin>>table;
+// for (int i = 1; i<=10; i++)
+// {
+    
+//     cout<<table<<"*"<<i<<"="<<table*i<<"\n";
+// }  
+
 
 }
 
