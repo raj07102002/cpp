@@ -148,16 +148,16 @@ int main() {
 
     //  write a program even
      
-    int a ,n; 
-    cout<<"enter a nubmer ";
-    cin>>a;  
-    for (int i = 1; i<=a; i++)
-    { 
-        if(i%2==0) {
-            cout <<i<<' ';
-        } 
+    // int a ,n; 
+    // cout<<"enter a nubmer ";
+    // cin>>a;  
+    // for (int i = 1; i<=a; i++)
+    // { 
+    //     if(i%2==0) {
+    //         cout <<i<<' ';
+    //     } 
         
-    }   
+    // }   
 
     // Q write a program to print the 
 

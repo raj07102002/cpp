@@ -1,10 +1,9 @@
-int n;
-    // int c = 0;
-    // cout<<"enter any no = "<<endl;
-    // cin>>n;
-    // while (n>0)
-    // {
-    //    c = c*10 + n%10;
-    //    n=n/10; 
-    // }
-    // cout<<c<<endl;
+int a = 1;
+    while(a<=10){
+        if (a%2==0)
+        {
+            cout<<a*a<<endl;
+            
+        }
+        a++;
+    }

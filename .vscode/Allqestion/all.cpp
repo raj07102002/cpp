@@ -613,7 +613,7 @@ int main() {
     // int a;
     // cout<<"enter any number";
     // cin>>a;
-    // int m = 1;
+    //int m = 1;
     // if (a<0)
     // {
     //     cout<<"invalid input";
@@ -655,9 +655,12 @@ int main() {
     // int a = 1;
     // int sum = 0;
     // do
-    // {
+    // { 
+        
     //     sum = sum + a;
-    //     a++;
+    //     a++; 
+        
+    //     cout<<"the sum is = "<<sum<<endl;
     // } while (a<=50);
     // cout<<"the sum is = "<<sum<<endl;
     // return 0;
@@ -706,7 +709,7 @@ int main() {
     //     int c = a%10;
     //     sum = sum*10 + c;
     //     a = a/10;
-    // } while (a!=0);
+    // } while (a>0);
     // if (sum==b)
     // {
     //     cout<<"palindrome number";
@@ -925,14 +928,14 @@ int main() {
     //1 2
     //1 2 3
 
-    // for (int r = 1; r <= 3; r++)
-    // {
-    //     for (int c = 1; c <= r; c++)
-    //     {
-    //         cout<<"c ";
-    //     }
-    //     cout<<endl;
-    // }
+    for (int r = 1; r <= 4; r++)
+    {
+        for (int c = 1; c <= r; c++)
+        {
+            cout<<c ;
+        }
+        cout<<endl;
+    }
 
     //Q
     //1

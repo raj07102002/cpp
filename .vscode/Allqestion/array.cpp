@@ -159,7 +159,22 @@ int main(){
 //   cout<<"yes";
 // }
   
-//  Q6. write a program 
+//  Q6. write a program  to print the reverse the array
+
+// int a[5],s,n;
+// s=sizeof (a)/sizeof a[0]; 
+// cout<<"array size :"<<s<<endl;
+// cout<<"enter the number of array\n";
+// for (int i = 0; i < s; i++)
+// {
+//     cin>>a[i];/* code */
+// }  
+// cout<<"reversed the array"<<endl;
+
+// for (int i = s-1; i >= 0; i--)
+// {
+//     cout<<a[i]<<" ";/* code */
+// }
 
 
 
